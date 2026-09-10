@@ -143,15 +143,11 @@ class MainActivity : ComponentActivity(), SensorEventListener {
 }
 
 
-/*
- * Tela principal da aplicação.
- *
- * Os valores recebidos do sensor são apresentados
- * utilizando componentes do Material Design.
- */
+//Tela principal do aplicativo. Os valores recebidos do sensor são apresentados utilizando componentes do Material Design.
+ 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun AcelerometroScreen(
+fun AcelerometroTela(
     valorX: Float,
     valorY: Float,
     valorZ: Float,
@@ -256,9 +252,8 @@ fun AcelerometroScreen(
 }
 
 
-/*
- * Card utilizado para apresentar os valores X, Y e Z.
- */
+//Card utilizado para apresentar os valores X, Y e Z.
+ 
 @Composable
 fun EixoCard(
     modifier: Modifier = Modifier,
@@ -302,10 +297,8 @@ fun EixoCard(
 }
 
 
-/*
- * Card utilizado para apresentar a aceleração linear
- * e a aceleração da gravidade.
- */
+// Card utilizado para apresentar a aceleração linear e a aceleração da gravidade.
+ 
 @Composable
 fun InformacaoCard(
     titulo: String,
